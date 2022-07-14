@@ -53,3 +53,6 @@ walletConnector.on("session_update", (error, payload) => {
     throw error;
   }
 });
+
+//disconnect
+walletConnector.killSession("connected")
